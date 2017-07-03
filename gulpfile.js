@@ -38,5 +38,11 @@ gulp.task('watch', () => {
 
   watch('./app/assets/styles/**/*.css', () => {
     gulp.start('styles');
+    gulp.start('cssInject');
   });
+});
+
+gulp.task('cssInject', ['styles'] ,() => {
+  return gulp.src('./app/temp/styles/styles.css')
+  .pipe(browserSync.stream());
 });
