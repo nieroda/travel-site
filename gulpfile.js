@@ -12,7 +12,7 @@ gulp.task('default', () => {
 
 
 gulp.task('html', () => {
-  console.log("Imagine something useful being done to your html here");
+  console.log("HTML was edited/updated");
 });
 
 gulp.task('styles', () => {
