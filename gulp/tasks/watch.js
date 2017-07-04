@@ -13,7 +13,6 @@ gulp.task('watch', () => {
   });
 
   watch('./app/index.html', () => {
-    gulp.start('html');
     browserSync.reload();
   });
 
